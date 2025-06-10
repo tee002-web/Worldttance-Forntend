@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings - Money Transfer App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  
+  <div class="settings-page">
+    <h2>⚙️ Settings</h2>
+
+    <!-- Profile Card -->
+    <div class="settings-card">
+      <h3>👤 My Profile</h3>
+      <form>
+        <input type="text" placeholder="Full Name" value="John Doe" />
+        <input type="email" placeholder="Email Address" value="john@example.com" />
+        <input type="tel" placeholder="Phone Number" value="+254701234567" />
+        <label>Profile Photo:</label>
+        <input type="file" />
+        <button type="submit">Save Profile</button>
+      </form>
+    </div>
+
+    <!-- Preferences Card -->
+    <div class="settings-card">
+      <h3>🔔 Preferences</h3>
+      <label><input type="checkbox" checked /> Email Notifications</label>
+      <label><input type="checkbox" /> SMS Alerts</label>
+      <label><input type="checkbox" /> In-App Notifications</label>
+      <button>Save Preferences</button>
+    </div>
+
+    <!-- Security Card -->
+    <div class="settings-card">
+      <h3>🔐 Security</h3>
+      <input type="password" placeholder="New Password" />
+      <input type="password" placeholder="Confirm Password" />
+      <label><input type="checkbox" /> Enable 2FA</label>
+      <button>Update Security</button>
+    </div>
+
+    <!-- Linked Accounts Card -->
+    <div class="settings-card">
+      <h3>🏦 Linked Accounts</h3>
+      <input type="text" placeholder="Bank Account Number" />
+      <input type="text" placeholder="Mobile Wallet Number" />
+      <input type="email" placeholder="PayPal Email" />
+      <button>Save Linked Accounts</button>
+    </div>
+
+    <!-- KYC Verification -->
+    <div class="settings-card">
+      <h3>🪪 KYC Verification</h3>
+      <p>Status: <strong style="color: green;">Verified</strong></p>
+      <input type="file" />
+      <button>Upload New ID</button>
+    </div>
+
+    <!-- Danger Zone -->
+    <div class="settings-card danger">
+      <h3>⚠️ Danger Zone</h3>
+      <button class="btn-danger">Deactivate Account</button>
+      <button class="btn-danger">Delete My Account</button>
+    </div>
+  </div>
+
+  
+  <!-- 🔻 Bottom Navigation Bar -->
+<nav class="bottom-nav">
+  <a href="dashboard.html">
+    <img src="New folder\Home.png" alt="Home" />
+    <span>Home</span>
+  </a>
+  <a href="send.html">
+    <img src="New folder\Send.png" alt="Send" />
+    <span>Send</span>
+  </a>
+  <a href="deposit.html">
+    <img src="New folder\Deposit.png" alt="Deposit" />
+    <span>Deposit</span>
+  </a>
+  <a href="history.html">
+    <img src="New folder\History.png" alt="History" />
+    <span>History</span>
+  </a>
+  <a href="settings.html">
+    <img src="New folder\settings.png" alt="Settings" />
+    <span>Settings</span>
+  </a>
+</nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

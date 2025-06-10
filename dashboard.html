@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Worldttance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+  <body>
+
+  <div class="dashboard-container">
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <h2>Welcome back, John Doe 👋</h2>
+      <p>Here’s a summary of your recent activity.</p>
+    </div>
+
+    <!-- Balance Card -->
+    <div class="balance-card">
+      <p>Account Balance</p>
+      <h3 id="balance-amount">$1,250.00</h3>
+      <button class="hide-btn" onclick="toggleBalance()">👁️ Toggle Balance</button>
+    </div>
+
+    <!-- Recent Transactions -->
+    <div class="transactions-section">
+      <h3>Recent Transactions</h3>
+      <div class="transaction-list">
+        <div class="transaction-item" onclick="toggleDetails(this)">
+          <div class="summary">
+            <span>Sent to James</span>
+            <span>-$50.00</span>
+          </div>
+          <div class="details">
+            <p>Date: June 5, 2025</p>
+            <p>Method: Mpesa</p>
+            <p>Transaction ID: TX123456</p>
+          </div>
+        </div>
+        <div class="transaction-item" onclick="toggleDetails(this)">
+          <div class="summary">
+            <span>Deposit from Bank</span>
+            <span>+$200.00</span>
+          </div>
+          <div class="details">
+            <p>Date: June 3, 2025</p>
+            <p>Bank: Equity</p>
+            <p>Transaction ID: TX654321</p>
+          </div>
+        </div>
+      </div>
+      <button class="pdf-btn" id="download-pdf-btn">📄 Download Statement (PDF)</button>
+    </div>
+
+  </div>
+      
+  <!-- 🔻 Bottom Navigation Bar -->
+<nav class="bottom-nav">
+  <a href="dashboard.html">
+    <img src="New folder\Home.png" alt="Home" />
+    <span>Home</span>
+  </a>
+  <a href="send.html">
+    <img src="New folder\Send.png" alt="Send" />
+    <span>Send</span>
+  </a>
+  <a href="deposit.html">
+    <img src="New folder\Deposit.png" alt="Deposit" />
+    <span>Deposit</span>
+  </a>
+  <a href="history.html">
+    <img src="New folder\History.png" alt="History" />
+    <span>History</span>
+  </a>
+  <a href="settings.html">
+    <img src="New folder\settings.png" alt="Settings" />
+    <span>Settings</span>
+  </a>
+</nav>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

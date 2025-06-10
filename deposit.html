@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deposit Funds</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  
+  <!-- Sticky Header -->
+  <div class="deposit-header">
+    <h2>➕ Deposit Money</h2>
+    <p>Select a payment method to proceed:</p>
+  </div>
+
+  <!-- Payment Methods Grid -->
+  <div class="deposit-methods">
+    <button onclick="selectMethod('mpesa')">
+      <img src="New folder/mpesa.png.png" alt="Mpesa"> Mpesa
+    </button>
+    <button onclick="selectMethod('bank')">
+      <img src="New folder/bank.png.jpeg" alt="Bank"> Bank
+    </button>
+    <button onclick="selectMethod('visa')">
+      <img src="New folder/visa.png.png" alt="Visa"> Visa
+    </button>
+    <button onclick="selectMethod('apple')">
+      <img src="New folder/apple.png.png" alt="Apple Pay"> Apple Pay
+    </button>
+    <button onclick="selectMethod('google')">
+      <img src="New folder/google.png.png" alt="Google Pay"> Google Pay
+    </button>
+  </div>
+
+  <!-- Deposit Form -->
+  <div class="deposit-form" id="deposit-form" style="display: none;">
+    <h3 id="selected-method-name"></h3>
+    <form id="depositForm">
+      <label>Amount (USD):</label>
+      <input type="number" id="amount" placeholder="Enter amount" required>
+
+      <div id="mpesa-fields" class="method-fields">
+        <label>Mpesa Number:</label>
+        <input type="tel" placeholder="07XXXXXXXX">
+      </div>
+
+      <div id="bank-fields" class="method-fields">
+        <label>Bank Name:</label>
+        <input type="text" placeholder="e.g. Equity Bank">
+        <label>Account Number:</label>
+        <input type="text" placeholder="e.g. 1234567890">
+      </div>
+
+      <div id="visa-fields" class="method-fields">
+        <label>Card Number:</label>
+        <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+        <label>Expiry Date:</label>
+        <input type="text" placeholder="MM/YY">
+        <label>CVV:</label>
+        <input type="text" placeholder="e.g. 123">
+      </div>
+
+      <div id="apple-fields" class="method-fields">
+        <p>Apple Pay will open a secure popup.</p>
+      </div>
+
+      <div id="google-fields" class="method-fields">
+        <p>Google Pay will open a secure popup.</p>
+      </div>
+
+      <button type="submit">Confirm Deposit</button>
+    </form>
+  </div>
+
+  
+ <!-- 🔻 Bottom Navigation Bar -->
+<nav class="bottom-nav">
+  <a href="dashboard.html">
+    <img src="New folder\Home.png" alt="Home" />
+    <span>Home</span>
+  </a>
+  <a href="send.html">
+    <img src="New folder\Send.png" alt="Send" />
+    <span>Send</span>
+  </a>
+  <a href="deposit.html">
+    <img src="New folder\Deposit.png" alt="Deposit" />
+    <span>Deposit</span>
+  </a>
+  <a href="history.html">
+    <img src="New folder\History.png" alt="History" />
+    <span>History</span>
+  </a>
+  <a href="settings.html">
+    <img src="New folder\settings.png" alt="Settings" />
+    <span>Settings</span>
+  </a>
+</nav>
+  <script src="script.js"></script>
+</body>
+</html>

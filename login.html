@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Worldttance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-container shadow">
+    <h2>Welcome Back</h2>
+    <form onsubmit="return loginUser(event)">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+  </div>
+
+  <div class="auth-container shadow hidden" id="signupForm">
+    <h2>Create Account</h2>
+    <form onsubmit="return signupUser(event)">
+      <input type="text" id="newName" placeholder="Full Name" required />
+      <input type="email" id="newEmail" placeholder="Email" required />
+      <input type="password" id="newPassword" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+  </div>
+
+  <div class="social-signup">
+  <p>Or sign up with:</p>
+  <div class="social-buttons">
+    <button class="google-btn">
+      <img src="New folder\google.jpg" alt="Google" />
+      Sign up with Google
+    </button>
+    <button class="facebook-btn">
+      <img src="New folder\facebook.jpg" alt="Facebook" />
+      Sign up with Facebook
+    </button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transaction History</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <div class="history-container shadow">
+    <h2>Transaction History 📜</h2>
+
+    <div class="transaction-card">
+      <p><strong>Recipient:</strong> John Doe</p>
+      <p><strong>Amount:</strong> $100 → KES 14,500</p>
+      <p><strong>Method:</strong> Card</p>
+      <p><strong>Date:</strong> June 5, 2025</p>
+      <p class="status success">Status: Completed</p>
+    </div>
+
+    <div class="transaction-card">
+      <p><strong>Recipient:</strong> Mary Wanjiku</p>
+      <p><strong>Amount:</strong> $80 → NGN 104,000</p>
+      <p><strong>Method:</strong> Bank</p>
+      <p><strong>Date:</strong> June 3, 2025</p>
+      <p class="status success">Status: Completed</p>
+    </div>
+
+    <div class="history-actions">
+      <button id="printBtn">🖨️ Print Statements</button>
+      <button onclick="window.location.href='dashboard.html'">← Back to Dashboard</button>
+    </div>
+    
+  </div>
+   <!-- 🔻 Bottom Navigation Bar -->
+<nav class="bottom-nav">
+  <a href="dashboard.html">
+    <img src="New folder\Home.png" alt="Home" />
+    <span>Home</span>
+  </a>
+  <a href="send.html">
+    <img src="New folder\Send.png" alt="Send" />
+    <span>Send</span>
+  </a>
+  <a href="deposit.html">
+    <img src="New folder\Deposit.png" alt="Deposit" />
+    <span>Deposit</span>
+  </a>
+  <a href="history.html">
+    <img src="New folder\History.png" alt="History" />
+    <span>History</span>
+  </a>
+  <a href="settings.html">
+    <img src="New folder\settings.png" alt="Settings" />
+    <span>Settings</span>
+  </a>
+</nav>
+  <script src="script.js"></script>
+</body>
+</html>

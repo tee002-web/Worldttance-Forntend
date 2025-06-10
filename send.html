@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Send Money</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+      
+<div class="send-container shadow">
+  <h2>💸 Send Money</h2>
+  <p>Select a method to send money:</p>
+
+  <div class="send-methods">
+    <button onclick="selectSendMethod('mpesa')">
+      <img src="New folder\mpesa.png.png" alt="Mpesa"> Mpesa
+    </button>
+    <button onclick="selectSendMethod('bank')">
+      <img src="New folder\bank.png.jpeg" alt="Bank"> Bank
+    </button>
+    <button onclick="selectSendMethod('visa')">
+      <img src="New folder\visa.png.png" alt="Visa"> Visa
+    </button>
+    <button onclick="selectSendMethod('apple')">
+      <img src="New folder\apple.png.png" alt="Apple Pay"> Apple Pay
+    </button>
+    <button onclick="selectSendMethod('google')">
+      <img src="New folder\google.jpg" alt="Google Pay"> Google Pay
+    </button>
+  </div>
+
+<div class="send-form" id="send-form" style="display: none;">
+    <h3 id="send-method-name"></h3>
+    <form id="sendMoneyForm">
+      <label for="recipient">Recipient Info:</label>
+      <input type="text" id="recipient" name="recipient" placeholder="Phone number, Bank account, etc." required>
+
+      <label for="amount">Amount (USD):</label>
+      <input type="number" id="send-amount" name="amount" placeholder="Enter amount" required>
+
+      <button type="submit">Send Now</button>
+    </form>
+</div>
+</div>
+
+<!-- 🔻 Bottom Navigation Bar -->
+<nav class="bottom-nav">
+  <a href="dashboard.html">
+    <img src="New folder\Home.png" alt="Home" />
+    <span>Home</span>
+  </a>
+  <a href="send.html">
+    <img src="New folder\Send.png" alt="Send" />
+    <span>Send</span>
+  </a>
+  <a href="deposit.html">
+    <img src="New folder\Deposit.png" alt="Deposit" />
+    <span>Deposit</span>
+  </a>
+  <a href="history.html">
+    <img src="New folder\History.png" alt="History" />
+    <span>History</span>
+  </a>
+  <a href="settings.html">
+    <img src="New folder\settings.png" alt="Settings" />
+    <span>Settings</span>
+  </a>
+</nav>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
